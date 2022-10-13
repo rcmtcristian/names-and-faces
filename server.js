@@ -1,8 +1,9 @@
 const { request } = require("express");
 const express = require("express");
 const app = express();
-const PORT = 8022;
+const cors = require("cors");
 
+app.use(cors());
 const names = {
   cristian: {
     age: 23,
