@@ -41,6 +41,6 @@ app.get("/api/:personName", (request, response) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`server starting on  port ${PORT} minus 10 seconds`);
 });
