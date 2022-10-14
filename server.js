@@ -7,23 +7,23 @@ app.use(cors());
 const names = {
   cristian: {
     age: 23,
-    alias: "cris",
-    nationality: "Dominican",
+    alias: "Cris",
+    profession: "Fullstack Software Engineer",
   },
-  greg: {
+  gregory: {
     age: 22,
-    alias: "jidmer",
-    nationality: "mexican",
+    alias: "greg",
+    profession: "Backend Software Engineer",
   },
-  yader: {
+  melodias: {
     age: 22,
-    alias: "yaderade",
-    nationality: "puerto rican",
+    alias: "Dias",
+    profession: "Frontend Software Engineer",
   },
-  dylon: {
+  dylan: {
     age: 26,
     alias: "dylan",
-    nationality: "Dylandia",
+    profession: "Dylan",
   },
 };
 
