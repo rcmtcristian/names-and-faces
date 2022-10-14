@@ -28,7 +28,9 @@ const names = {
 };
 
 app.get("/", (request, response) => {
-  console.log(response.sendFile(__dirname + "/index.html"));
+  response.sendFile(__dirname + "/index.html");
+  console.log("Here");
+  console.log(names);
 });
 
 app.get("/api/:personName", (request, response) => {
