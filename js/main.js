@@ -4,7 +4,7 @@ async function apiRequest() {
   const personName = document.querySelector("input").value;
   try {
     const response = await fetch(
-      `https://names-and-faces-nraivuy3w-rcmtcristian.vercel.app/api/${personName}`
+      `https://names-and-many-faces-api.herokuapp.com/api/${personName}`
     );
     const data = await response.json();
 
