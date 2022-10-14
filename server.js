@@ -1,4 +1,3 @@
-// const { request } = require("express");
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -34,12 +33,10 @@ app.get("/", (request, response) => {
 
 app.get("/api/:personName", (request, response) => {
   const personName = request.params.personName.toLowerCase();
-  // response.json(names);
-
   if (names[personName]) {
     response.json(names[personName]);
   } else {
-    response.json(names["dylon"]);
+    response.json(names["dylan"]);
   }
 });
 
