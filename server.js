@@ -1,7 +1,8 @@
-const { request } = require("express");
+// const { request } = require("express");
 const express = require("express");
 const app = express();
 const cors = require("cors");
+let PORT = 8022;
 
 app.use(cors());
 const names = {
@@ -42,6 +43,6 @@ app.get("/api/:personName", (request, response) => {
   }
 });
 
-app.listen(process.env.PORT || PORT, () => {
+app.listen(PORT, () => {
   console.log(`server starting on  port ${PORT} minus 10 seconds`);
 });
