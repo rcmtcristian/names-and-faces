@@ -5,6 +5,13 @@ const cors = require("cors");
 let PORT = 8022;
 
 app.use(cors());
+
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/index.html");
+  console.log("Here");
+  console.log(names);
+});
+
 const names = {
   cristian: {
     age: 23,
@@ -28,16 +35,10 @@ const names = {
   },
 };
 
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/index.html");
-  console.log("Here");
-  console.log(names);
-});
-
-app.get("/api/:personName", (request, response) => {
-  const personName = request.params.personName.toLowerCase();
-  if (names[personName]) {
-    response.json(names[personName]);
+app.get("/api/:userName", (request, response) => {
+  const userName = request.params.userName.toLowerCase();
+  if (names[userName]) {
+    response.json(names[userName]);
   } else {
     response.json(names["dylan"]);
   }

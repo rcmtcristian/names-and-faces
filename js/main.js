@@ -4,7 +4,7 @@ async function apiRequest() {
   const personName = document.querySelector("input").value;
   try {
     const response = await fetch(
-      `https://names-and-many-faces-api.herokuapp.com/api/${personName}`
+      `https://names-and-many-faces-api.herokuapp.com/api/${userName}`
     );
     const data = await response.json();
 
