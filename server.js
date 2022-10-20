@@ -8,8 +8,6 @@ app.use(cors());
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
-  console.log("Here");
-  console.log(names);
 });
 
 const names = {
