@@ -10,8 +10,10 @@ async function apiRequest() {
     const data = await response.json();
 
     document.getElementById("personName").innerText = data.alias;
-    document.getElementById("personTitle").innerText = data.profession;
-    document.getElementById("personAge").textContent = data.age;
+    document.getElementById("personOrigin").innerText = data.origin;
+    document.getElementById("personDescription").innerText = data.description;
+    document.getElementById("personVoice").textContent = data.voice;
+    document.getElementById("moves").textContent = data.moves[0];
   } catch (error) {
     console.log(error);
   }
