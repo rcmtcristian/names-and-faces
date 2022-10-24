@@ -10,9 +10,9 @@ app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
 });
 
-const names = {
+const characters = {
   bowser: {
-    ide: 2,
+    ide: 1,
     voice: "Hikaru Midorikawa",
     alias: "Bowser",
     description:
@@ -25,6 +25,7 @@ const names = {
     },
   },
   "captain falcon": {
+    ide: 2,
     voice: "Ryō Horikawa",
     alias: "Captain Falcon",
     description:
@@ -37,6 +38,7 @@ const names = {
     },
   },
   "donkey kong": {
+    ide: 3,
     voice: "Takashi Nagasako ",
     alias: "Donkey Kong",
     description:
@@ -49,6 +51,7 @@ const names = {
     },
   },
   "dr mario": {
+    ide: 4,
     voice: "Charles Martinet",
     alias: "Dr. Mario",
     description:
@@ -61,6 +64,7 @@ const names = {
     },
   },
   falco: {
+    ide: 5,
     voice: "Hisao Egawa",
     alias: "Falco Lombardi ",
     description:
@@ -73,6 +77,7 @@ const names = {
     },
   },
   fox: {
+    ide: 6,
     voice: "Shinobu Satouchi",
     alias: "Fox McCloud",
     description:
@@ -85,6 +90,7 @@ const names = {
     },
   },
   ganondorf: {
+    ide: 7,
     voice: "Hironori Miyata",
     alias: "Ganondorf",
     description:
@@ -97,6 +103,7 @@ const names = {
     },
   },
   "ice climbers": {
+    ide: 8,
     voice: "Sanae Kobayashi",
     alias: "Ice Climbers",
     description:
@@ -109,6 +116,7 @@ const names = {
     },
   },
   jigglypuff: {
+    ide: 9,
     voice: "Mika Kanai",
     alias: "Jigglypuff",
     description:
@@ -121,6 +129,7 @@ const names = {
     },
   },
   kirby: {
+    ide: 10,
     voice: "Makiko Ohmoto",
     alias: "Kirby",
     description:
@@ -133,6 +142,7 @@ const names = {
     },
   },
   link: {
+    ide: 11,
     voice: "Nobuyuki Hiyama",
     alias: "Link",
     description:
@@ -145,6 +155,7 @@ const names = {
     },
   },
   luigi: {
+    ide: 12,
     voice: "Charles Martinet",
     alias: "Luigi",
     description:
@@ -157,6 +168,7 @@ const names = {
     },
   },
   mario: {
+    ide: 13,
     voice: "Charles Martinet i",
     alias: "Mario",
     description:
@@ -169,6 +181,7 @@ const names = {
     },
   },
   marth: {
+    ide: 14,
     voice: "Hikaru Midorikawa",
     alias: "Marth",
     description:
@@ -181,6 +194,7 @@ const names = {
     },
   },
   mewtwo: {
+    ide: 15,
     voice: "Masachika Ichimura",
     alias: "Mewtwo",
     description:
@@ -193,6 +207,7 @@ const names = {
     },
   },
   "mr game & watch": {
+    ide: 16,
     voice: "Isshin Chiba",
     alias: "Mr Game & Watch",
     description:
@@ -205,6 +220,7 @@ const names = {
     },
   },
   ness: {
+    ide: 17,
     voice: "Makiko Ohmoto ",
     alias: "Ness",
     description:
@@ -217,6 +233,7 @@ const names = {
     },
   },
   peach: {
+    ide: 18,
     voice: "Samantha Kelly",
     alias: "Peach",
     description:
@@ -229,6 +246,7 @@ const names = {
     },
   },
   pichu: {
+    ide: 19,
     voice: "Satomi Kōrogi",
     alias: "Pichu",
     description:
@@ -241,6 +259,7 @@ const names = {
     },
   },
   pikachu: {
+    ide: 20,
     voice: "Ikue Otani",
     alias: "Pikachu",
     description:
@@ -253,6 +272,7 @@ const names = {
     },
   },
   roy: {
+    ide: 21,
     voice: "Jun Fukuyama",
     alias: "Roy",
     description:
@@ -265,6 +285,7 @@ const names = {
     },
   },
   samus: {
+    ide: 22,
     voice: "Alésia Toyoko Glidewell",
     alias: "Samus",
     description:
@@ -277,6 +298,7 @@ const names = {
     },
   },
   "young link": {
+    ide: 23,
     voice: "Fujiko Takimoto",
     alias: "Young Link",
     description:
@@ -289,6 +311,7 @@ const names = {
     },
   },
   yoshi: {
+    ide: 24,
     voice: "Kazumi Totaka",
     alias: "Yoshi",
     description:
@@ -301,7 +324,7 @@ const names = {
     },
   },
   zelda: {
-    ide: 1,
+    ide: 25,
     voice: "Jun Mizusawa",
     alias: "Zelda",
     description:
@@ -314,6 +337,7 @@ const names = {
     },
   },
   unknown: {
+    ide: 26,
     voice: "Unknow",
     alias: "Unknown",
     description: "It seems the character you're looking for is somewhere else",
@@ -325,12 +349,12 @@ const names = {
   },
 };
 
-app.get("/api/:userName", (request, response) => {
-  const userName = request.params.userName.toLowerCase();
-  if (names[userName]) {
-    response.json(names[userName]);
+app.get("/api/:characterName", (request, response) => {
+  const characterName = request.params.characterName.toLowerCase();
+  if (characters[characterName]) {
+    response.json(characters[characterName]);
   } else {
-    response.json(names["unknown"]);
+    response.json(characters["unknown"]);
   }
 });
 
