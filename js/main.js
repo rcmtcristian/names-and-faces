@@ -15,7 +15,7 @@ async function apiRequest() {
   const userName = document.querySelector("input").value;
   try {
     const response = await fetch(
-      `https://names-and-faces-api.vercel.app/api/${userName}`
+      `https://names-and-faces-api.vercel.app/api/${characterName}`
     );
 
     const data = await response.json();
@@ -31,9 +31,9 @@ async function apiRequest() {
     document.getElementById("personDescription").innerText = data.description;
     document.getElementById("personVoice").textContent = data.voice;
     document.getElementById("moves").textContent = specificMoves();
-    document.getElementById("test").innerHTML = data.ide;
-    document.getElementById("image").src = `/images/1.jpg`;
-    console.log(data.ide);
+    // document.getElementById("test").innerHTML = data.ide;
+    // document.getElementById("image").src = `/images/1.jpg`;
+    // console.log(data.ide);
   } catch (error) {
     console.log(error);
   }
