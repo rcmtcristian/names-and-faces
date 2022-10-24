@@ -22,7 +22,7 @@ async function apiRequest() {
 
     const specificMoves = () => {
       Object.entries(data.moves).forEach(([key, value]) => {
-        console.log(value);
+        return value;
       });
     };
 
