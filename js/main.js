@@ -31,6 +31,9 @@ async function apiRequest() {
     document.getElementById("personDescription").innerText = data.description;
     document.getElementById("personVoice").textContent = data.voice;
     document.getElementById("moves").textContent = specificMoves();
+    document.getElementById("test").innerHTML = data.ide;
+    // document.getElementById("image").src = `/images/1.jpg`;
+    // console.log(data.ide);
   } catch (error) {
     console.log(error);
   }

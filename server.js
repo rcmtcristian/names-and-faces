@@ -12,6 +12,7 @@ app.get("/", (request, response) => {
 
 const names = {
   bowser: {
+    ide: 2,
     voice: "Hikaru Midorikawa",
     alias: "Bowser",
     description:
@@ -300,6 +301,7 @@ const names = {
     },
   },
   zelda: {
+    ide: 1,
     voice: "Jun Mizusawa",
     alias: "Zelda",
     description:
