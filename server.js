@@ -45,7 +45,7 @@ const characters = {
   },
   "donkey kong": {
     ide: 3,
-    voice: "Takashi Nagasako ",
+    voice: "Takashi Nagasako",
     voiceId: "3b",
     color: "fadd5a",
     extraImage: "3a",
@@ -205,7 +205,7 @@ const characters = {
   },
   mario: {
     ide: 13,
-    voice: "Charles Martinet i",
+    voice: "Charles Martinet",
     voiceId: "13b",
     color: "ff442b",
     extraImage: "13a",
@@ -269,7 +269,7 @@ const characters = {
   },
   ness: {
     ide: 17,
-    voice: "Makiko Ohmoto ",
+    voice: "Makiko Ohmoto",
     voiceId: "17b",
     color: "de413d",
     extraImage: "17a",
