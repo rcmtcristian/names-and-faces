@@ -14,6 +14,8 @@ const characters = {
   bowser: {
     ide: 1,
     voice: "Hikaru Midorikawa",
+    voiceId: 1,
+
     alias: "Bowser",
     description:
       "In many ways, Bowser is the toughest character around. Not only does he have near-impervious hide, but his great mass makes him almost impossible to hurl offscreen. Of course, his weight also makes him rather slow to maneuver, so when facing him in battle, it's best to press your attack and not give him a chance to counter.",
@@ -27,6 +29,7 @@ const characters = {
   "captain falcon": {
     ide: 2,
     voice: "Ryō Horikawa",
+    voiceId: 2,
     alias: "Captain Falcon",
     description:
       "Falcon's style is a balanced combination of raw power and speed. His attacks are slow, but when combined with Falcon's high mobility, he's a formidable combat force. The Falcon Punch packs the highest degree of destructive power, while the explosive Raptor Boost can be used to smash airborne foes into the depths.",
@@ -40,6 +43,7 @@ const characters = {
   "donkey kong": {
     ide: 3,
     voice: "Takashi Nagasako ",
+    voiceId: 3,
     alias: "Donkey Kong",
     description:
       "Donkey Kong is a huge target in a fight, so he hates crowds. When he's in the fray, his Giant Punch deals serious damage to multiple opponents. The big ape's Headbutt hits so hard that it temporarily buries opponent's in the ground. DK is a lot faster than he looks, and he's lethal in the hands of a master.",
@@ -53,6 +57,7 @@ const characters = {
   "dr mario": {
     ide: 4,
     voice: "Charles Martinet",
+    voiceId: 4,
     alias: "Dr. Mario",
     description:
       "here's hardly any difference in the abilities of Mario and Dr. Mario, so choosing is largely a matter of taste. Dr. Mario is a tad slower due to his lack of exercise, but his Megavitamins pack a bit more punch than Mario's Fireballs. The capsules travel on a unique trajectory and make a distinct sound on impact.",
@@ -66,6 +71,7 @@ const characters = {
   falco: {
     ide: 5,
     voice: "Hisao Egawa",
+    voiceId: 5,
     alias: "Falco Lombardi ",
     description:
       "Where his leader, Fox, has blinding speed, Falco has his own distinct skills and advantages. He has both a higher jump and a longer reach than Fox, and although his Blaster lacks rapid-fire capabilities, it strikes with shocking force. Unlike Fox, Falco can stop enemies in their tracks with his Blaster fire.",
@@ -79,6 +85,7 @@ const characters = {
   fox: {
     ide: 6,
     voice: "Shinobu Satouchi",
+    voiceId: 6,
     alias: "Fox McCloud",
     description:
       "Fox is among the quickest and nimblest of the Smash Bros. characters. His speed is offset by low firepower, however, and he's better at one-on-one fights than melees with multiple foes. His Blaster is unique: it does damage but it doesn't make enemies flinch. His Fox illusion is best used as a surprise attack.",
@@ -92,6 +99,7 @@ const characters = {
   ganondorf: {
     ide: 7,
     voice: "Hironori Miyata",
+    voiceId: 7,
     alias: "Ganondorf",
     description:
       "Since he's slow and can't jump very high, Ganondorf relies mainly on his immense physical strength to overwhelm his enemies. His great weight also makes him a difficult foe to send offscreen. Ganondorf's Warlock Punch is slow but absurdly powerful, and when he strikes with his Gerudo Dragon, enemies rise skyward enveloped in dark flames.",
@@ -105,6 +113,7 @@ const characters = {
   "ice climbers": {
     ide: 8,
     voice: "Sanae Kobayashi",
+    voiceId: 8,
     alias: "Ice Climbers",
     description:
       "That's Popo in the blue and Nana in the pink. These two stars of the game Ice Climber have scaled many an ice summit in their mountaineering careers. Back in their glory days, they chased eggplants, cucumbers, and other vegetables that inexplicable fell from frosty summits where a condor reigned supreme. They're rarely seen apart.",
@@ -118,6 +127,7 @@ const characters = {
   jigglypuff: {
     ide: 9,
     voice: "Mika Kanai",
+    voiceId: 9,
     alias: "Jigglypuff",
     description:
       "Jigglypuff's normal attacks are weak, and because of its light weight it's easily sent flying. However, with its incredible midair agility, it seems to dance when airborne. Rollout is a powerful speed attack, but be careful not to fly off the edge. Pound does serious damage, and it can also help as a recovery move.",
@@ -131,6 +141,7 @@ const characters = {
   kirby: {
     ide: 10,
     voice: "Makiko Ohmoto",
+    voiceId: 10,
     alias: "Kirby",
     description:
       "Kirby's small size lets him dodge many attacks, but his light weight makes him fly far when struck. Using his ability to inflate, he can jump five times. His Swallow attack creates wild combos; not only can he copy foes' moves, but he'll also put on special hats and mimic their voices. His Hammer is unwieldy but powerful.",
@@ -144,6 +155,7 @@ const characters = {
   link: {
     ide: 11,
     voice: "Nobuyuki Hiyama",
+    voiceId: 11,
     alias: "Link",
     description:
       "Burdened with a shield, a heavy sword, and plenty of equipment, Link is not a very mobile character. Nevertheless, he's skilled with the blade, and his varied supply of missile weapons makes him a powerful fighter. To master Link, you must control the pace by balancing your long-range attacks with head-to-head swordplay.",
@@ -157,6 +169,7 @@ const characters = {
   luigi: {
     ide: 12,
     voice: "Charles Martinet",
+    voiceId: 12,
     alias: "Luigi",
     description:
       "Luigi has worse traction than his brother, but he's a more powerful jumper. His Fireballs aren't affected by gravity, so they fly straight horizontally. The Green Missile is similar to Pikachu's Skull Bash, but there's a 12.5% chance of a spontaneous misfire. Luigi's taunting pose inflicts minor damage.",
@@ -170,6 +183,7 @@ const characters = {
   mario: {
     ide: 13,
     voice: "Charles Martinet i",
+    voiceId: 13,
     alias: "Mario",
     description:
       "Mario is a character without any glaring weaknesses and plenty of strong attacks: he's even equipped with a Meteor Smash. He's a straightforward character who'll reflect the actual skills of the player. Mario's Cape will turn other characters in the opposite direction and can also reflect missile weapons.",
@@ -183,6 +197,7 @@ const characters = {
   marth: {
     ide: 14,
     voice: "Hikaru Midorikawa",
+    voiceId: 14,
     alias: "Marth",
     description:
       "Marth is a magnificent swordsman. While his swordplay is faster than that of Link, he lacks power, and his quickness is offset by a marginal endurance. His Shield Breaker gains power the longer it's held. The Dancing Blade combination uses both the Control Stick and the B Button to produce a series of up to four attacks.",
@@ -196,6 +211,7 @@ const characters = {
   mewtwo: {
     ide: 15,
     voice: "Masachika Ichimura",
+    voiceId: 15,
     alias: "Mewtwo",
     description:
       "As Mewtwo relies mostly on its powerful brain, there are times when it scarcely uses its arms and legs. Since Mewtwo spends much of its time floating, it flies far when struck. Shadow Ball traces a jagged path once released; the longer Mewtwo holds it, the more powerful it becomes. Mewtwo uses Confusion to spin its foes around.",
@@ -209,6 +225,7 @@ const characters = {
   "mr game & watch": {
     ide: 16,
     voice: "Isshin Chiba",
+    voiceId: 16,
     alias: "Mr Game & Watch",
     description:
       "A resident of a totally flat world, Mr. Game & Watch's frame-by-frame movements is distinctive. His image is known far and wide, and respected by gamers everywhere. In Super Smash Bros. Melee, he hurls sausages with his Chef technique. The random strength of his Judgment is determined by the number displayed; food appears on lucky 7",
@@ -222,6 +239,7 @@ const characters = {
   ness: {
     ide: 17,
     voice: "Makiko Ohmoto ",
+    voiceId: 17,
     alias: "Ness",
     description:
       "The key to mastering Ness is controlling his unique midair jump, which makes up for what he lacks in speed. His PK Flash attack may seem weak at first glance, but it grows more powerful the longer you hold down the B Button. To do a lot of damage with PK Fire, try to burn your opponent as many times as possible.",
@@ -235,6 +253,7 @@ const characters = {
   peach: {
     ide: 18,
     voice: "Samantha Kelly",
+    voiceId: 18,
     alias: "Peach",
     description:
       "Peach's ability to float is invaluable in Super Smash Bros. Melee, as she can return from incredible distances. Balancing this talent, though, is the fact that she's quite light and can be sent flying with a single powerful attack. Her attacks are fairly weak, so you'll have to hang around to win.",
@@ -248,6 +267,7 @@ const characters = {
   pichu: {
     ide: 19,
     voice: "Satomi Kōrogi",
+    voiceId: 19,
     alias: "Pichu",
     description:
       "Compared with Pikachu, Pichu is a tad more nimble and a little more difficult to hit. Those are the only two advantages, however, and since Pichu damages itself when it uses electrical attacks, it's best suited for handicapped matches. Even though Pichu's tough to catch, it's easy to throw its tiny frame great distances.",
@@ -261,6 +281,7 @@ const characters = {
   pikachu: {
     ide: 20,
     voice: "Ikue Otani",
+    voiceId: 20,
     alias: "Pikachu",
     description:
       "While its electrical attacks, such as Thunder and Thunder Jolt, are powerful, Pikachu is at its best speeding around the fray and waiting for its chance to strike. You can control the path of Pikachu's two-directional Quick Attack, allowing you to jump twice. Hold down the B Button to charge up Skull Bash.",
@@ -274,6 +295,7 @@ const characters = {
   roy: {
     ide: 21,
     voice: "Jun Fukuyama",
+    voiceId: 21,
     alias: "Roy",
     description:
       "While Roy's moves are well balanced, he's a little on the slow side, and doesn't excel at midair combat. His blade, the Sword of Seals, gives him excellent reach, and makes his Double-Edge Dance slightly different than Marth's Dancing Blade. When it's fully charged, Roy's destructive Flare Blade delivers an instant KO.",
@@ -287,6 +309,7 @@ const characters = {
   samus: {
     ide: 22,
     voice: "Alésia Toyoko Glidewell",
+    voiceId: 22,
     alias: "Samus",
     description:
       "Samus has an abundance of projectile weapons, making her a long-distance attack specialist. The most powerful weapon in her arsenal is her Charge Shot, but be warned: it can be reflected. Her missiles have homing capabilities, but when fired as Smash Attacks, they fly on a straight trajectory and have boosted power.",
@@ -300,6 +323,7 @@ const characters = {
   "young link": {
     ide: 23,
     voice: "Fujiko Takimoto",
+    voiceId: 23,
     alias: "Young Link",
     description:
       "Young Link is lighter and faster than his older self, and his Kokiri sword packs less punch. Even though his Boomerang has a shorter range, he has greater control over it. He's a smaller target, and while his Hookshot has less reach than older Link's, you can still use it in midair as a last ditch attempt to grab a ledge.",
@@ -313,6 +337,7 @@ const characters = {
   yoshi: {
     ide: 24,
     voice: "Kazumi Totaka",
+    voiceId: 24,
     alias: "Yoshi",
     description:
       "To make up for his lack of powerful airborne attacks, Yoshi has a miraculous jumping ability and is resistant to damage while in the air. Yoshi can also swallow a foe and transform him or her into an egg: try doing this close to an edge! The speed and power of the Egg Roll increases if you hold down the B Button, but it'll be tougher to control.",
@@ -326,6 +351,7 @@ const characters = {
   zelda: {
     ide: 25,
     voice: "Jun Mizusawa",
+    voiceId: 25,
     alias: "Zelda",
     description:
       "Zelda is a bit slow and, because of her light frame, easy to send flying. On the other hand, her magical skills lend her reliable and explosive attack power. Zelda's easier to use if you focus on waiting and countering rather than pressing attacks. She can use Nayru's Love to reflect projectile attacks or as an offensive weapon.",
