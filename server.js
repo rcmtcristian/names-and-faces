@@ -105,8 +105,6 @@ const characters = {
     moves: {
       b: "Blaster",
       "smash b": "Fox Illusion",
-      color: "",
-      extraImage: "1a",
     },
   },
   ganondorf: {
@@ -417,7 +415,7 @@ const characters = {
     ide: 26,
     voice: "Unknow",
     alias: "Unknown",
-    color: "",
+    color: "7a7796",
     extraImage: "26a",
     description: "It seems the character you're looking for is somewhere else",
     origin: "You most likely typed the name wrong, check and try again",
