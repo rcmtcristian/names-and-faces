@@ -12,6 +12,8 @@
 [API Application](https://ssbmsearch.vercel.app/)  
 [API Repo](https://github.com/rcmtcristian/Smash-client-API/tree/master)
 
+## About
+My project, MeleeMaven, is a comprehensive resourse for fans of the popular fighting game, Super Smash Bros. Melee. By developing an API and accompanying front end interface, I have made it easy for users to access and explore a wealth of obscure and hard-to-find information about each of the game's fighters. Whether you're a seasoned competitor or just a casual player, MeleeMaven has something to offer for everyone. With My user-friendly interface and extensive database, you'll be able to learn everything there is to know about your favorite Smash Bros. characters in no time.
 
 ## Lessons learned
 How to undertand more DRY and implement methods to and extent 
